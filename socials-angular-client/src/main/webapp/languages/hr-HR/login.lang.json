@@ -1,0 +1,9 @@
+{
+  "title": "Socials",
+  "username": "Korisničko ime",
+  "password": "Lozinka",
+  "signIn": "Prijavi se",
+  "signingIn": "&nbsp;Prijavljujem se",
+  "signInErrorMsg": "Neispravno korisničko ime ili lozinka",
+  "signUp": "Kreiraj Socials račun"
+}

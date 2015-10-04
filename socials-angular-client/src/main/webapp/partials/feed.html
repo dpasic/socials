@@ -1,0 +1,47 @@
+<section>
+    <div ng-show="errorPost" class="container-fluid alert alert-danger alert-dismissable instagram-img-width">
+        <button type="button" class="close" ng-click="errorPost = false;" aria-hidden="true">&times;</button>
+        <span i18n="feed.errorPost"></span>
+    </div>
+    <div id="topPage" class="row">
+        <div class="col-xs-10 col-sm-6 col-xs-offset-1 col-sm-offset-3">
+            <button ng-click="openPostingStatus()" class="btn btn-success btn-block" i18n="feed.postStatus"
+                    ng-disabled="!connectedToTwitter && !connectedToFacebook"></button>
+        </div>
+        <div id="toTop" ng-show="newStatusArrived" class="btn btn-info"><i class="fa fa-arrow-up"></i>
+            <span i18n="feed.newStatus"></span>
+        </div>
+    </div>
+
+    <br/>
+    <div class="container-fluid instagram-img-width">
+        <div ng-show="newStatusArrivedHeader" class="alert alert-info alert-dismissable">
+            <span i18n="feed.newStatus"></span>
+        </div>
+    </div>
+
+    <div ng-repeat="status in feed">
+        <div class="container-fluid well well-sm instagram-img-width">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1">
+                    <i ng-show="status.socialNetwork === 'FACEBOOK'" class="fa fa-facebook"></i>
+                    <i ng-show="status.socialNetwork === 'TWITTER'" class="fa fa-twitter"></i>
+                    <i ng-show="status.socialNetwork === 'INSTAGRAM'" class="fa fa-instagram"></i>
+                </div>
+                <div class="col-xs-8 col-sm-8">
+                    <strong>{{status.creatorName}}</strong>
+                </div>
+                <div class="col-xs-3 col-sm-3 text-center">
+                    {{status.createdAt | date: 'short'}}
+                </div>
+            </div>
+            <div ng-show="status.imageUrl" class="img-margin">
+                <img ng-src="{{status.imageUrl}}" class="img-responsive img-rounded">
+            </div>
+            <hr ng-show="!status.imageUrl" />
+            <div>
+                {{status.text}}
+            </div>
+        </div>
+    </div>
+</section>

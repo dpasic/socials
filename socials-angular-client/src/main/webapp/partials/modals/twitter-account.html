@@ -1,0 +1,38 @@
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="twitterAccountModalLabel" i18n="twitterModalAccount.twitterAccount"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-3">
+                        <p><strong i18n="twitterModalAccount.username"></strong></p>
+                        <p><strong i18n="twitterModalAccount.fullName"></strong></p>
+                        <p><strong i18n="twitterModalAccount.followers"></strong></p>
+                        <p><strong i18n="twitterModalAccount.friends"></strong></p>
+                    </div>
+                    <div class="col-xs-7 col-sm-5">
+                        <p>{{twitterAccountInfo.username}}</p>
+                        <p>{{twitterAccountInfo.fullName}}</p>
+                        <p>{{twitterAccountInfo.followersCount}}</p>
+                        <p>{{twitterAccountInfo.friendsCount}}</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <p class="visible-sm visible-md visible-lg">&nbsp;</p>
+                        <p class="visible-sm visible-md visible-lg">&nbsp;</p>
+                        <p class="visible-sm visible-md visible-lg">&nbsp;</p>
+                        <button class="btn btn-danger" ng-click="disconnectFromTwitter()" i18n="common.disconnect"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" i18n="common.ok"></button>
+            </div>
+        </div>
+    </div>
+</div>

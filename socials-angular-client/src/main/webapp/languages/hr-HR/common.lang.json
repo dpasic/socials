@@ -1,0 +1,9 @@
+{
+	"success": "Uspjeh",
+	"error": "Pogreška",
+	"warning": "Upozorenje",
+	"ok": "U redu",
+    "connectWithIndent": "&nbsp;&nbsp;Spoji se",
+    "disconnect": "Isključi",
+    "errorOccurred": "Dogodila se pogreška"
+}

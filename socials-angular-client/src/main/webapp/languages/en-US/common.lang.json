@@ -1,0 +1,9 @@
+{
+	"success": "Success",
+	"error": "Error",
+	"warning": "Warning",
+	"ok": "Ok",
+    "connectWithIndent": "&nbsp;&nbsp;Connect",
+    "disconnect": "Disconnect",
+    "errorOccurred": "Error occurred"
+}

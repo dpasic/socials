@@ -1,0 +1,9 @@
+{
+  "title": "Socials",
+  "username": "Username",
+  "password": "Password",
+  "signIn": "Sign in",
+  "signingIn": "&nbsp;Signing in",
+  "signInErrorMsg": "Invalid username or password",
+  "signUp": "Sign up for a Socials account"
+}

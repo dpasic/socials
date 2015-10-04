@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="socials">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Socials</title>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css"/>
+	<link rel="stylesheet" href="bower_components/angular-language-picker/dist/angular-language-picker.min.css"/>
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.min.css">
+
+    <link rel="stylesheet" href="css/signing-in-up.css">
+    <link rel="stylesheet" href="css/refresh-animation.css">
+    <link rel="stylesheet" href="css/back-to-top.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-localization/angular-localization.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-modal-service/dst/angular-modal-service.min.js"></script>
+    
+    <script src="js/socials.js"></script>
+    <script src="js/socials-language-picker.js"></script>
+    <script src="js/socials-constants.js"></script>
+    <script src="js/socials-utility.js"></script>
+    <script src="js/controllers/socials-application-controller.js"></script>
+    <script src="js/controllers/socials-login-controller.js"></script>
+    <script src="js/controllers/socials-home-controller.js"></script>
+    <script src="js/controllers/extracted-networks/socials-twitter-home-controller.js"></script>
+    <script src="js/controllers/extracted-networks/socials-facebook-home-controller.js"></script>
+    <script src="js/controllers/extracted-networks/socials-instagram-home-controller.js"></script>
+    <script src="js/controllers/modals/socials-twitter-modal-account-controller.js"></script>
+    <script src="js/controllers/modals/socials-facebook-modal-account-controller.js"></script>
+    <script src="js/controllers/modals/socials-instagram-modal-account-controller.js"></script>
+    <script src="js/controllers/modals/socials-posting-status-modal-controller.js"></script>
+    <script src="js/controllers/socials-feed-controller.js"></script>
+    <script src="js/controllers/socials-register-controller.js"></script>
+    <script src="js/services/twitter/socials-twitter-auth-service.js"></script>
+    <script src="js/services/twitter/socials-twitter-credentials-service.js"></script>
+    <script src="js/services/twitter/socials-twitter-api-service.js"></script>
+    <script src="js/services/facebook/socials-facebook-auth-service.js"></script>
+    <script src="js/services/facebook/socials-facebook-credentials-service.js"></script>
+    <script src="js/services/facebook/socials-facebook-api-service.js"></script>
+    <script src="js/services/instagram/socials-instagram-auth-service.js"></script>
+    <script src="js/services/instagram/socials-instagram-credentials-service.js"></script>
+    <script src="js/services/instagram/socials-instagram-api-service.js"></script>
+    <script src="js/services/socials-users-service.js"></script>
+    <script src="js/services/socials-user-helper-service.js"></script>
+    <script src="js/services/socials-users-credentials-service.js"></script>
+    <script src="js/services/socials-user-auth-service.js"></script>
+    <script src="js/services/socials-feed-service.js"></script>
+</head>
+<body ng-controller="ApplicationController">
+    <div class="container-fluid" style="max-width: 1500px;">
+        <div ui-view></div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+</body>
+</html>

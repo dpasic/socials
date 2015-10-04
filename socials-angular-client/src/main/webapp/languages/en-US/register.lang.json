@@ -1,0 +1,11 @@
+{
+  "title": "Socials",
+  "username": "Username",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "email": "Email",
+  "password": "Password",
+  "signUp": "Sign up",
+  "signingUp": "&nbsp;Signing up",
+  "backSignIn": "Back to sign in"
+}

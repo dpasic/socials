@@ -1,0 +1,48 @@
+<section>
+    <div id="languageSelectionLogin" class="container text-right">
+        <language-picker currentlanguage="currentlanguage"
+                         languages="supportedLangs"
+                         on-change="onLanguageChange(language)"></language-picker>
+    </div>
+    <br/>
+
+    <form class="form-signin" role="form" name="registerForm"
+          ng-submit="registerForm.$valid && registerAndSignIn(credentials)" novalidate>
+        <h2 class="form-signin-heading" i18n="register.title"></h2>
+
+        <input type="text" ng-model="credentials.username" id="inputUsername"
+               name="username" class="form-control"
+               i18n-attr="{placeholder: 'register.username'}" required autofocus>
+        <input type="text" ng-model="credentials.firstName"
+               id="inputFirstName" name="firstName" class="form-control"
+               i18n-attr="{placeholder: 'register.firstName'}" required>
+        <input type="text" ng-model="credentials.lastName"
+               id="inputLastName" name="lastName" class="form-control"
+               i18n-attr="{placeholder: 'register.lastName'}" required>
+        <input type="email" ng-model="credentials.email"
+               id="inputEmail" name="email" class="form-control"
+               i18n-attr="{placeholder: 'register.email'}" required>
+        <input type="password" ng-model="credentials.password"
+               id="inputPassword" name="password" class="form-control"
+               i18n-attr="{placeholder: 'register.password'}" required>
+
+        <button type="submit" class="btn btn-lg btn-success btn-block btn-wrap-text" i18n="register.signUp"
+                ng-disabled="registerForm.$invalid" ng-show="!inSigningUp"></button>
+        <button class="btn btn-lg btn-success btn-block btn-wrap-text" ng-show="inSigningUp"
+                disabled="true">
+            <span class="glyphicon glyphicon-repeat glyphicon-repeat-animate"></span>
+            <span i18n="register.signingUp"></span>
+        </button>
+        <br/>
+
+        <div ng-show="registerError" class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" ng-click="registerError = false;"
+                    aria-hidden="true">&times;</button>
+            <span i18n="common.errorOccurred"></span>
+        </div>
+        <br/>
+
+        <button class="btn btn-primary btn-block btn-wrap-text" i18n="register.backSignIn"
+                ng-disabled="inSigningUp" ui-sref="login"></button>
+    </form>
+</section>	

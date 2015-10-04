@@ -1,0 +1,36 @@
+<section>
+    <div id="languageSelectionLogin" class="container text-right">
+        <language-picker currentlanguage="currentlanguage"
+                         languages="supportedLangs" on-change="onLanguageChange(language)"></language-picker>
+    </div>
+    <br/>
+
+    <form class="form-signin" role="form" name="loginForm"
+          ng-submit="loginForm.$valid && login(credentials)" novalidate>
+        <h2 class="form-signin-heading" i18n="login.title"></h2>
+
+        <input type="text" ng-model="credentials.username" id="inputUsername"
+               name="username" class="form-control"
+               i18n-attr="{placeholder: 'login.username'}" required autofocus>
+        <input type="password" ng-model="credentials.password"
+               id="inputPassword" name="password" class="form-control"
+               i18n-attr="{placeholder: 'login.password'}" required>
+
+        <button type="submit" class="btn btn-lg btn-primary btn-block btn-wrap-text" ng-show="!inSigningIn"
+                i18n="login.signIn" ng-disabled="loginForm.$invalid"></button>
+        <button class="btn btn-lg btn-primary btn-block btn-wrap-text" ng-show="inSigningIn" disabled="true">
+            <span class="glyphicon glyphicon-repeat glyphicon-repeat-animate"></span>
+            <span i18n="login.signingIn"></span>
+        </button>
+        <br/>
+
+        <div ng-show="wrongCredentials" class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" ng-click="wrongCredentials = false;" aria-hidden="true">&times;</button>
+            <span i18n="login.signInErrorMsg"></span>
+        </div>
+        <br/>
+
+        <button class="btn btn-success btn-block btn-wrap-text" i18n="login.signUp" ng-disabled="inSigningIn"
+                ui-sref="register"></button>
+    </form>
+</section>	

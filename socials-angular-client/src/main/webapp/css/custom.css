@@ -1,0 +1,23 @@
+body {
+    overflow-x: hidden;
+}
+
+#greetingButton {
+    margin: 2px 0px 0px 10px;
+}
+
+#languageSelectionLogin {
+	padding-top: 40px;
+}
+
+.btn-wrap-text {
+    white-space:normal !important;
+}
+
+.instagram-img-width {
+    max-width: 640px;
+}
+
+.img-margin {
+    margin: 7px;
+}

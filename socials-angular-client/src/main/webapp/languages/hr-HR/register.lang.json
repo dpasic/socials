@@ -1,0 +1,11 @@
+{
+  "title": "Socials",
+  "username": "Korisničko ime",
+  "firstName": "Ime",
+  "lastName": "Prezime",
+  "email": "Email",
+  "password": "Lozinka",
+  "signUp": "Kreiraj račun",
+  "signingUp": "&nbsp;Kreiranje računa",
+  "backSignIn": "Povratak na prijavu"
+}

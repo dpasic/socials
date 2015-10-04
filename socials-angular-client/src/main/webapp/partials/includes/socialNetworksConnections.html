@@ -1,0 +1,25 @@
+<button ng-click="connectToFacebook()" class="btn btn-facebook btn-block btn-wrap-text"
+        ng-show="!connectedToFacebook">
+    <i class="fa fa-facebook"></i><span i18n="common.connectWithIndent"></span>
+</button>
+<button ng-click="openFacebookAccountInfo()" class="btn btn-facebook btn-block btn-wrap-text"
+        ng-show="connectedToFacebook">
+    <i class="fa fa-facebook"></i>&nbsp;&nbsp;{{facebookCredentials.facebookFullName}}
+</button>
+<button ng-click="connectToTwitter()" class="btn btn-twitter btn-block btn-wrap-text"
+        ng-show="!connectedToTwitter">
+    <i class="fa fa-twitter"></i><span i18n="common.connectWithIndent"></span>
+</button>
+<button ng-click="openTwitterAccountInfo()" class="btn btn-twitter btn-block btn-wrap-text"
+        ng-show="connectedToTwitter">
+    <i class="fa fa-twitter"></i>&nbsp;&nbsp;{{twitterCredentials.twitterUsername}}
+</button>
+<button ng-click="connectToInstagram()" class="btn btn-instagram btn-block btn-wrap-text"
+        ng-show="!connectedToInstagram">
+    <i class="fa fa-instagram"></i><span i18n="common.connectWithIndent"></span>
+</button>
+<button ng-click="openInstagramAccountInfo()" class="btn btn-instagram btn-block btn-wrap-text"
+        ng-show="connectedToInstagram">
+    <i class="fa fa-instagram"></i>&nbsp;&nbsp;{{instagramCredentials.instagramUsername}}
+</button>
+<br/>
