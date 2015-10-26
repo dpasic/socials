@@ -4,7 +4,7 @@ This sample web application for social networks integration consists of two proj
 
 socials-spring-rest
 ---------------------------------
- * Used as REST interface for handling authorization and simple social networks operations (receiving and posting statuses) on Facebook, Twitter and Instagram
+ * Used as REST interface for handling authorization and simple social networks operations (receiving and posting statuses, as well as previewing basic user data) on Facebook, Twitter and Instagram
  * Spring boot application
 
 socials-angular-client
@@ -12,6 +12,8 @@ socials-angular-client
  * Single page web application for demonstration purposes of REST interface
  * Client designed using AngularJS framework
  * Spring boot application
+
+![Socials screenshot](https://c2.staticflickr.com/6/5734/22313513028_4566182cfd_z.jpg)
 
 
 Step 1: Register your application
